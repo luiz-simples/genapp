@@ -1,6 +1,9 @@
 'use strict'
 
-angular.module('interfaceApp', [
-  'ngCookies',
+@app = angular.module 'interfaceApp', [
+  'ui.router'
+  'ngCookies'
   'ngSanitize'
-])
+  'restangular'
+  'pascalprecht.translate'
+]
