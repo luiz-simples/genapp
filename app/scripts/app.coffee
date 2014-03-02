@@ -1,6 +1,6 @@
 'use strict'
 
-@app = angular.module 'interfaceApp', [
+@app = angular.module 'genApp', [
   'ui.router'
   'ngCookies'
   'ngSanitize'
