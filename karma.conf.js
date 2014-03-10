@@ -21,8 +21,6 @@ module.exports = function(config) {
       'app/bower_components/restangular/dist/restangular.js',
       '.tmp/scripts/*.js',
       '.tmp/scripts/**/*.js',
-      //'.tmp/test/mock/**/*.js',
-      '.tmp/test/*.js',
       '.tmp/test/**/*.js'
     ],
 

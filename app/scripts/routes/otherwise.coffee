@@ -4,5 +4,5 @@
   "$urlRouterProvider"
   "routes"
   ($urlRouterProvider, routes) ->
-    $urlRouterProvider.otherwise routes.application.url
+    $urlRouterProvider.otherwise routes.otherwise.url
 ]
