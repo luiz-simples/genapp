@@ -3,10 +3,10 @@
 @app.config [
   "$stateProvider"
   "routeConfig"
-  "routeApplication"
-  ($stateProvider, routeConfig, routeApplication) ->
-    $stateProvider.state routeApplication.name,
-      url: routeApplication.url
+  "routes"
+  ($stateProvider, routeConfig, routes) ->
+    $stateProvider.state routes.application.name,
+      url: routes.application.url
       views:
-        application: routeConfig routeApplication
+        application: routeConfig(routes.application)
 ]

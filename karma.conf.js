@@ -19,10 +19,11 @@ module.exports = function(config) {
       'app/bower_components/angular-ui-router/release/angular-ui-router.js',
       'app/bower_components/lodash/dist/lodash.compat.js',
       'app/bower_components/restangular/dist/restangular.js',
-      'app/scripts/*.coffee',
-      'app/scripts/**/*.coffee',
-      'test/mock/**/*.coffee',
-      'test/spec/**/*.coffee'
+      '.tmp/scripts/*.js',
+      '.tmp/scripts/**/*.js',
+      //'.tmp/test/mock/**/*.js',
+      '.tmp/test/*.js',
+      '.tmp/test/**/*.js'
     ],
 
     // list of files / patterns to exclude
