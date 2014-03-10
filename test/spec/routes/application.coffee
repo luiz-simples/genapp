@@ -3,9 +3,9 @@
 describe 'Routes: Application: ', ()->
   beforeEach module 'genApp'
 
-  $state       = {}
-  routes       = {}
-  $httpBackend = {}
+  $state       = null
+  routes       = null
+  $httpBackend = null
 
   beforeEach inject (_$state_, _routes_, _$httpBackend_)->
     $state       = _$state_
@@ -13,7 +13,8 @@ describe 'Routes: Application: ', ()->
     $httpBackend = _$httpBackend_
 
   it 'should defined route of the applications', ()->
-    expect(routes.application).toBeDefined();
+    expect(routes).toBeDefined()
+    expect(routes.application).toBeDefined()
     expect(routes.application).toEqual name: "application", url: "/"
 
   it 'should respond to URL', ()->
@@ -23,5 +24,5 @@ describe 'Routes: Application: ', ()->
     $httpBackend.whenGET("views/application.html").respond {}
 
     $state.go routes.application.name
-    $httpBackend.flush();
+    $httpBackend.flush()
     expect($state.current.name).toBe routes.application.name
